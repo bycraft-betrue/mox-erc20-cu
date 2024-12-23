@@ -5,6 +5,12 @@
 @author ByCraft
 @notice An ERC20 token with snek 
 """
+from ethereum.ercs import IERC20
+implements: IERC20 
+# even if we are not implementing all these functions, 
+# contract will still compile because snekmate implements them all and we are importing it
+
+
 from pcaversaccio.snekmate.src.snekmate.auth import ownable
 from pcaversaccio.snekmate.src.snekmate.tokens import erc20
 
@@ -20,10 +26,12 @@ DECIMALS: constant(uint8) = 18
 EIP712_NAME: constant(String[50]) = "snek_token"
 EIP712_VERSION: constant(String[20]) = "1"
 
+# 0 tokens when first deployed without minting
 @deploy
-def __init__():
+def __init__(initial_supply: uint256):
     ownable.__init__()
     erc20.__init__(NAME, SYMBOL, DECIMALS, EIP712_NAME, EIP712_VERSION)
+    erc20._mint(msg.sender, initial_supply)
     
 
 # if you do it yourself you need to implement a lot of functions
