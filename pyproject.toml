@@ -8,6 +8,7 @@ dependencies = [
     "eth-utils>=5.1.0",
     "mamushi>=0.0.3",
     "moccasin>=0.3.6",
+    "mox>=0.5.3",
     "ruff>=0.8.4",
 ]
 

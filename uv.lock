@@ -863,6 +863,7 @@ dependencies = [
     { name = "eth-utils" },
     { name = "mamushi" },
     { name = "moccasin" },
+    { name = "mox" },
     { name = "ruff" },
 ]
 
@@ -871,8 +872,15 @@ requires-dist = [
     { name = "eth-utils", specifier = ">=5.1.0" },
     { name = "mamushi", specifier = ">=0.0.3" },
     { name = "moccasin", specifier = ">=0.3.6" },
+    { name = "mox", specifier = ">=0.5.3" },
     { name = "ruff", specifier = ">=0.8.4" },
 ]
+
+[[package]]
+name = "mox"
+version = "0.5.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0c/a1/64740c638cc5fae807022368f4141700518ee343b53eb3e90bf3cc15a4d4/mox-0.5.3.tar.gz", hash = "sha256:424ee725ee12652802b4e86571f816059b0d392401ceae70bf6487d65602cba9", size = 32397 }
 
 [[package]]
 name = "mypy-extensions"
