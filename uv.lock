@@ -861,6 +861,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "eth-utils" },
+    { name = "hypothesis" },
     { name = "mamushi" },
     { name = "moccasin" },
     { name = "mox" },
@@ -870,6 +871,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "eth-utils", specifier = ">=5.1.0" },
+    { name = "hypothesis", specifier = ">=6.123.0" },
     { name = "mamushi", specifier = ">=0.0.3" },
     { name = "moccasin", specifier = ">=0.3.6" },
     { name = "mox", specifier = ">=0.5.3" },
